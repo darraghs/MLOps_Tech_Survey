@@ -1,5 +1,5 @@
 
-\documentclass[12pt, letterpaper]{article}
+\documentclass[12pt, a4paper]{article}
 \usepackage{graphicx}
 \usepackage{blindtext}
 
@@ -14,21 +14,43 @@
  bottom=20mm,
  }
  \linespread{1.5}
+ \raggedright
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{csquotes}% Recommended
+
+\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+
+\addbibresource{mlops_lit_review.bib}% Syntax for version >= 1.2
+%\bibliography{./ref_biblatex} % the ref.bib file
 
  % Metda data
 \title{A technological survey of Machine Learning Operations Platforms}
 \author{Darragh Sherwin}
-\date{Febuary 2023}
+\date{February 2023}
 
 
 
 \begin{document}
 \maketitle
 \begin{abstract}
-Machine Learning Operations (MLOps) is a growth area in the space of machine learning and development operations (DevOps) as organisations 
+Machine Learning Operations (MLOps) is a growth area in the space of machine learning and development operations (DevOps) as organisations.
+
 \end{abstract}
 
 \section{Literature Review}
 
+\section*{Citation examples}
+
+\begin{enumerate}
+
+\item A citation command in parentheses: \autocite{rufDemystifyingMLOpsPresenting2021}.
+\item 
+
+\end{enumerate}
+
+\printbibliography
 
 \end{document}
